@@ -1,0 +1,17 @@
+import array as arr
+print("Start small. Ship something.")
+n = int(input("How many elements do you want? "))
+my_array = []
+
+for i in range(n):
+    element = int(input(f"Enter element {i+1}: "))
+    my_array.append(element)
+
+print("Final array:", my_array)
+for i in range(n):
+    for j in range(0,n-i-1):
+        if my_array[j] > my_array[j+1]:
+            temp = my_array[j]
+            my_array[j] = my_array[j+1]
+            my_array[j+1] = temp
+print(my_array)
