@@ -1,0 +1,14 @@
+import array as arr
+print("Start small. Ship something.")
+row = int(input("How many rows do you want? "))
+cum = int(input("How many column do you want?"))
+array =[]
+for i in range(row):
+    row_data = []
+    for j in range(cum):
+        num = int(input(f"enter a number {i+1} row, {j+1} column"))
+        row_data.append(num)
+    array.append(row_data)
+print("\nyour Dynamic array:")
+for row in array:
+    print(row)
