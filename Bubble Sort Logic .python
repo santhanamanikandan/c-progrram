@@ -1,12 +1,9 @@
-import array as arr
-print("Start small. Ship something.")
+print("Start small. do something.")
 n = int(input("How many elements do you want? "))
 my_array = []
-
 for i in range(n):
     element = int(input(f"Enter element {i+1}: "))
     my_array.append(element)
-
 print("Final array:", my_array)
 for i in range(n):
     for j in range(0,n-i-1):
